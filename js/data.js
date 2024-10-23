@@ -84,15 +84,14 @@ export const slidesData = [
     {
         title: "총평",
         tableContents: [
-            { heading: "기반 AI 모델", info: ["OpenAI Codex(OpenAI의 GPT-3 모델을 기반)", "GPT 및 JetBrains 자체 언어 모델 통합", "자체 AI 모델"] },
-            { heading: "IDE 통합", info: ["여러 IDE (VS Code, JetBrains, Neovim, GitHub Web 등)", "JetBrains 제품군 (WebStorm, IntelliJ, PyCharm 등) 전용", "여러 IDE (VS Code, JetBrains, Neovim 등)"] },
-            { heading: "비용", info: ["월 $10 (또는 연간 $100)", "JetBrains 제품 구독(연간 $149 이상) 필요", "무료"] },
-            { heading: "코드 자동 완성", info: ["매우 빠르고 다양한 언어 지원", "자동 완성, 리팩토링, 코드 분석까지 포괄적 지원", "빠르고 가벼운 코드 자동 완성, 자연어로 코드 설명 가능"] },
-            { heading: "코드 분석 및 최적화", info: ["제한적", "심층 코드 분석 및 리팩토링, 코드 최적화 지원", "제한적 (주로 자동 완성 및 코드 제안에 중점)"] },
-            { heading: "문맥 이해 및 코드 리뷰", info: ["코드 완성에 특화", "코드 리뷰 및 문맥 이해를 통한 개선 제안", "문맥에 맞는 코드 제안, 주로 자동 완성에 중점"] },
-            { heading: "Git 통합", info: ["GitHub와 완벽한 통합 (Pull Request 및 코드 리뷰 연동)", "JetBrains 내장 VCS 및 Git 연동", "Git 통합 기능은 제한적, 주로 코드 자동 완성에 초점"] },
-            { heading: "자연어 질문 처리", info: ["자연어로 코드 생성 가능", "코드 리뷰나 최적화 시 자연어로 코드 요청 가능", "자연어 기반 코드 요청 및 제안 가능"] },
-            { heading: "성능 및 속도", info: ["빠른 코드 자동 완성", "코드 분석 및 자동 완성 속도가 빠름", "가벼운 코드 제안과 자동 완성, 리소스 소모가 적음"] }
+            { heading: "기반 AI 모델", info: [{ text: "OpenAI Codex(OpenAI의 GPT-3 모델을 기반)" }, { text: "GPT 및 JetBrains 자체 언어 모델 통합", active: true }, { text: "자체 AI 모델" }] },
+            { heading: "IDE 통합", info: [{ text: "여러 IDE (VS Code, JetBrains, Neovim, GitHub Web 등)" }, { text: "JetBrains 제품군 (WebStorm, IntelliJ, PyCharm 등) 전용", active: true }, { text: "여러 IDE (VS Code, JetBrains, Neovim 등)" }] },
+            { heading: "비용", info: [{ text: "월 $10 (또는 연간 $100)" }, { text: "JetBrains 제품 구독(연간 $149 이상) 필요" }, { text: "무료", active: true }] },
+            { heading: "코드 자동 완성", info: [{ text: "매우 빠르고 다양한 언어 지원", active: true }, { text: "자동 완성, 리팩토링, 코드 분석까지 포괄적 지원" }, { text: "빠르고 가벼운 코드 자동 완성, 자연어로 코드 설명 가능" }] },
+            { heading: "코드 분석 및 최적화", info: [{ text: "제한적" }, { text: "심층 코드 분석 및 리팩토링, 코드 최적화 지원", active: true }, { text: "제한적 (주로 자동 완성 및 코드 제안에 중점)" }] },
+            { heading: "문맥 이해 및 코드 리뷰", info: [{ text: "코드 완성에 특화" }, { text: "코드 리뷰 및 문맥 이해를 통한 개선 제안", active: true }, { text: "문맥에 맞는 코드 제안, 주로 자동 완성에 중점" }] },
+            { heading: "Git 통합", info: [{ text: "GitHub와 완벽한 통합 (Pull Request 및 코드 리뷰 연동)", active: true }, { text: "JetBrains 내장 VCS 및 Git 연동" }, { text: "Git 통합 기능은 제한적, 주로 코드 자동 완성에 초점" }] },
+            { heading: "성능 및 속도", info: [{ text: "빠른 코드 자동 완성", active: true }, { text: "코드 분석 및 자동 완성 속도가 빠름" }, { text: "가벼운 코드 제안과 자동 완성, 리소스 소모가 적음" }] }
         ]
     }
 ]

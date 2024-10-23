@@ -1,4 +1,4 @@
-import { slidesData } from './data.js';
+import {slidesData} from './data.js';
 
 let slideIndex = 1;
 
@@ -162,12 +162,14 @@ function createTable(data) {
     table.appendChild(thead);
 
     const tbody = createElement('tbody');
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < data.tableContents.length; i++) {
         const row = createElement('tr');
         const headingCell = createElement('td', null, data.tableContents[i]?.heading || '');
         row.appendChild(headingCell);
         for (let j = 0; j < 3; j++) {
-            const cell = createElement('td', null, data.tableContents[i]?.info[j] || '');
+            const cellData = data.tableContents[i]?.info[j];
+            const cellClass = cellData?.active ? 'active' : null;
+            const cell = createElement('td', cellClass, cellData?.text || '');
             row.appendChild(cell);
         }
         tbody.appendChild(row);
